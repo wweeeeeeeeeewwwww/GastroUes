@@ -80,8 +80,7 @@
                     </h1>
                     <p>
                       Queremos que la comunidad estudiantil de la UES cuente con una plataforma en donde se puedan compartir una variedad de recetas familiares o que
-                      compartan sus propias creaciones originales. Creemos que sería un lugar en donde se pueda dar un diálogo sano donde se pueda hablar de algo que a
-                      todos nos gusta e interesa, la comida.
+                      compartan sus propias creaciones originales. 
                     </p>
                     
                   </div>
@@ -144,8 +143,27 @@
   <section class="client_section layout_padding-bottom">
     <div class="container">
       <div class="heading_container heading_center psudo_white_primary mb_45">
+         <form id="themeForm">
+            <h3 style="margin-top: 100px; ">Tema:</h3>
+            <label><img src="images/Tema claro.png" onclick="selectTheme('light')">
+              <input type="radio" name="theme" value="light" style="display: none;">
+              
+            </label>
+            <label>
+              <img src="images/Tema gris.png" onclick="selectTheme('gray')">
+              <input type="radio" name="theme" value="gray" style="display: none;">
+              
+          </label>
+          
+          <label>
+              <img src="images/Tema oscuro.png" onclick="selectTheme('dark')">
+              <input type="radio" name="theme" value="dark" style="display: none;">
+              
+          </label>
+        </form>
+        
         <h2 style="margin-top: 100px; ">
-          ¡TOP 5✨🤩!
+          ¡TOP 3!
         </h2>
       </div>
       <div class="carousel-wrap row ">
@@ -597,6 +615,24 @@
   <!-- End Google Map -->
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function selectTheme(theme) {
+        if (theme === 'light') {
+            document.querySelector('input[value="light"]').checked = true;
+            document.body.style.backgroundColor = '#fff';
+            document.body.style.color = '#5e9f45';
+        } else if (theme === 'gray') {
+            document.querySelector('input[value="gray"]').checked = true;
+            document.body.style.backgroundColor = '#ddd';
+            document.body.style.color = '#5e9f45';
+        } else if (theme === 'dark') {
+            document.querySelector('input[value="dark"]').checked = true;
+            document.body.style.backgroundColor = '#333';
+            document.body.style.color = '#fff';
+        }
+    }
+    
+  </script>
 </body>
 
 </html>

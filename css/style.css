@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
-  color: #1dda3d;
+  color: #5e9f45;
   background-color: #ffffff;
   overflow-x: hidden;
 }
@@ -176,7 +176,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 10px 20px;
-  color: #1dda3d;
+  color: #5e9f45;
   text-align: center;
   text-transform: uppercase;
   border-radius: 15px;
@@ -363,7 +363,7 @@ a:focus {
 .slider_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #1dda3d;
+  background-color: #5e9f45;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -373,7 +373,7 @@ a:focus {
 }
 
 .slider_section .detail-box a:hover {
-  background-color: #1dda3d;
+  background-color: #5e9f45;
 }
 
 .slider_section .img-box img {
@@ -402,7 +402,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #1dda3d;
+  background-color: #5e9f45;
 }
 
 .offer_section {
@@ -433,7 +433,7 @@ a:focus {
   -webkit-transition: all 0.1 0.5s;
   transition: all 0.1 0.5s;
   border-radius: 100%;
-  border: 5px solid #1dda3d;
+  border: 5px solid #5e9f45;
   overflow: hidden;
 }
 
@@ -783,7 +783,7 @@ a:focus {
 
 .client_section .box .img-box img {
    border-radius: 100%; 
-  border: 5px solid #1dda3d;
+  border: 5px solid #5e9f45;
   position: relative;
 }
 
@@ -794,7 +794,7 @@ a:focus {
   top: 0;
   width: 15px;
   height: 20px;
-  background-color: #1dda3d;
+  background-color: #5e9f45;
   -webkit-transform: rotate(45deg) translateX(-50%);
           transform: rotate(45deg) translateX(-50%);
 }
@@ -917,7 +917,7 @@ a:focus {
 .footer-dark {
   padding:50px 0;
   color:#f0f9ff;
-  background-color: #2dad58;
+  background-color: #5e9f45;
 }
 
 .footer-dark h3 {
@@ -1039,3 +1039,5 @@ a:focus {
   /*max-height: 250px; 
   width: auto;*/
 }
+
+

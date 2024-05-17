@@ -62,7 +62,7 @@
               </li>
               
               <li class="nav-item active">
-                <a class="nav-link" href="book.html">Compalte tu reseta <span class="sr-only">(current)</span> </a>
+                <a class="nav-link" href="book.html">Compalte tu receta <span class="sr-only">(current)</span> </a>
               </li>
             </ul>
             
@@ -75,8 +75,30 @@
 
   <!-- book section -->
   <section class="book_section layout_padding">
+    <div class="heading_container heading_center">
+      <form id="themeForm">
+        <h3 >Tema:</h3>
+        <label><img src="images/Tema claro.png" onclick="selectTheme('light')">
+          <input type="radio" name="theme" value="light" style="display: none;">
+          
+        </label>
+        <label>
+          <img src="images/Tema gris.png" onclick="selectTheme('gray')">
+          <input type="radio" name="theme" value="gray" style="display: none;">
+          
+      </label>
+      
+      <label>
+          <img src="images/Tema oscuro.png" onclick="selectTheme('dark')">
+          <input type="radio" name="theme" value="dark" style="display: none;">
+          
+      </label>
+    </form>
+    </div>
     <div class="container">
+      
       <div class="heading_container">
+        
         <h2>
           Compaltenos tus recetas
         </h2>
@@ -167,6 +189,24 @@
   <!-- End Google Map -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function selectTheme(theme) {
+        if (theme === 'light') {
+            document.querySelector('input[value="light"]').checked = true;
+            document.body.style.backgroundColor = '#fff';
+            document.body.style.color = '#5e9f45';
+        } else if (theme === 'gray') {
+            document.querySelector('input[value="gray"]').checked = true;
+            document.body.style.backgroundColor = '#ddd';
+            document.body.style.color = '#5e9f45';
+        } else if (theme === 'dark') {
+            document.querySelector('input[value="dark"]').checked = true;
+            document.body.style.backgroundColor = '#333';
+            document.body.style.color = '#fff';
+        }
+    }
+    
+  </script>
 </body>
 
 </html>
